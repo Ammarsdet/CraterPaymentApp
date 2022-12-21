@@ -17,7 +17,7 @@ public static WebDriver driver;
 	public static WebDriver getDriver() {
 		String browser = System.getProperty("browser");
 		if (browser == null) {
-			browser = testDataReader.getProperty("browser");
+			browser = TestDataReader.getProperty("browser");
 										
 		}
 		if (driver==null) {
