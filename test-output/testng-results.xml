@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-21T18:36:40 EST" name="Default suite" finished-at="2022-12-21T18:36:46 EST" duration-ms="6773">
+  <suite started-at="2022-12-27T15:52:01 EST" name="Default suite" finished-at="2022-12-27T15:52:06 EST" duration-ms="5189">
     <groups>
     </groups>
-    <test started-at="2022-12-21T18:36:40 EST" name="Default test" finished-at="2022-12-21T18:36:46 EST" duration-ms="6773">
+    <test started-at="2022-12-27T15:52:01 EST" name="Default test" finished-at="2022-12-27T15:52:06 EST" duration-ms="5189">
       <class name="tests.UserManagement">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UserManagement@23529fee]" started-at="2022-12-21T18:36:40 EST" name="setup" finished-at="2022-12-21T18:36:44 EST" duration-ms="3863" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UserManagement@358ee631]" started-at="2022-12-27T15:52:01 EST" name="setup" finished-at="2022-12-27T15:52:03 EST" duration-ms="2625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validLogin()[pri:0, instance:tests.UserManagement@23529fee]" started-at="2022-12-21T18:36:44 EST" name="validLogin" finished-at="2022-12-21T18:36:46 EST" duration-ms="2564" status="FAIL">
+        <test-method signature="validLogin()[pri:0, instance:tests.UserManagement@358ee631]" started-at="2022-12-27T15:52:03 EST" name="validLogin" finished-at="2022-12-27T15:52:06 EST" duration-ms="2366" status="FAIL">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
               <![CDATA[element not interactable
-  (Session info: chrome=108.0.5359.124)
+  (Session info: headless chrome=108.0.5359.124)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'Ammars-Air.fios-router.home', ip: 'fe80:0:0:0:180c:7667:95b3:4679%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '17.0.3.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/4y/27skzycd2gl...}, goog:chromeOptions: {debuggerAddress: localhost:51464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cc23fb5680ce2e77ff8497afc911a014]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/4y/27skzycd2gl...}, goog:chromeOptions: {debuggerAddress: localhost:53373}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 873415e1b2e52a2c39ad914100988c64]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=108.0.5359.124)
+  (Session info: headless chrome=108.0.5359.124)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'Ammars-Air.fios-router.home', ip: 'fe80:0:0:0:180c:7667:95b3:4679%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '17.0.3.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/4y/27skzycd2gl...}, goog:chromeOptions: {debuggerAddress: localhost:51464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cc23fb5680ce2e77ff8497afc911a014
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/4y/27skzycd2gl...}, goog:chromeOptions: {debuggerAddress: localhost:53373}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 873415e1b2e52a2c39ad914100988c64
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -84,7 +84,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UserManagement@23529fee]" started-at="2022-12-21T18:36:46 EST" name="tearDown" finished-at="2022-12-21T18:36:46 EST" duration-ms="282" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UserManagement@358ee631]" started-at="2022-12-27T15:52:06 EST" name="tearDown" finished-at="2022-12-27T15:52:06 EST" duration-ms="136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -12,10 +12,10 @@ public class LoginPage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 	
-	@FindBy (name = "email")
+	@FindBy (css = "#loginForm > div:nth-child(1) > div > div > input")
 	public WebElement useremail;
 	
-	@FindBy (name = "password")
+	@FindBy (xpath= "//*[@id=\"loginForm\"]/div[2]/div/div/input")
 	public WebElement password;
 	
 	@FindBy (linkText = "Forgot Password?")
