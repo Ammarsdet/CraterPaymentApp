@@ -1,9 +1,13 @@
 package utils;
 
 import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
 import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
@@ -18,10 +22,15 @@ public static WebDriver driver;
 		String browser = System.getProperty("browser");
 		if (browser == null) {
 			browser = TestDataReader.getProperty("browser");
-										
 		}
-		if (driver==null) {
+		if (driver == null || ((RemoteWebDriver) driver).getSessionId() == null) {
 			switch(browser) {
+			case "chrome-headless" :
+				ChromeDriverManager.chromedriver().setup();
+				ChromeOptions chromeOptions = new ChromeOptions();
+				chromeOptions.addArguments("--headless");
+				driver = new ChromeDriver(chromeOptions);
+				break;
 			case "chrome" :
 				ChromeDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
@@ -29,6 +38,12 @@ public static WebDriver driver;
 			case "firefox" :
 				FirefoxDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
+				break;
+			case "firefox-headless" :
+				FirefoxDriverManager.firefoxdriver().setup();
+				FirefoxOptions firefoxOptions = new FirefoxOptions();
+				firefoxOptions.setHeadless(true);
+				driver = new FirefoxDriver(firefoxOptions);
 				break;
 			case "safari" :
 				driver = new SafariDriver();
@@ -39,7 +54,9 @@ public static WebDriver driver;
 				break;
 			default:
 				ChromeDriverManager.chromedriver().setup();
-				driver = new ChromeDriver();
+				ChromeOptions Options = new ChromeOptions();
+				Options.addArguments("--headless");
+				driver = new ChromeDriver(Options);
 				break;
 			}
 			
@@ -55,5 +72,4 @@ public static WebDriver driver;
 		}
 
 }
-
 }
